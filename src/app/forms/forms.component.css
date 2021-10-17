@@ -1,0 +1,10 @@
+.col {
+  border-left: 2px dotted rgb(175, 175, 44);
+  border-top: 2px solid rgb(119, 30, 30);
+  padding: 2em;
+}
+
+button,input {
+  padding: 0.8em;
+  border-radius: 5px;
+}
