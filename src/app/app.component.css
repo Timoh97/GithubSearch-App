@@ -21,7 +21,12 @@
   padding: 2em;
 }
 
-span,h3 {
+button,input {
+  padding: 0.8em;
+  border-radius: 5px;
+}
+
+span,h3,label {
   color: brown;
 }
 
