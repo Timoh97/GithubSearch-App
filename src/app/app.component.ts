@@ -8,7 +8,7 @@ import { RepositoriesService } from './services/repositories/repositories.servic
 })
 export class AppComponent implements OnInit{
   title = 'Timm';
-  username = 'Timoh97';
+  username = 'robert-moringa';
   repositories:any[] = [];
   isLoading = false;
 
