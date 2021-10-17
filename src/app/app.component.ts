@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RepositoriesService } from './services/repositories/repositories.service';
+import { FormsComponent } from './forms/forms.component';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +8,9 @@ import { RepositoriesService } from './services/repositories/repositories.servic
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
+
   title = 'Timm';
-  username = 'robert-moringa';
+  username = 'Timoh97'
   repositories:any[] = [];
   isLoading = false;
 
