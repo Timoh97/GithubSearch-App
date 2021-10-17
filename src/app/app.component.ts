@@ -8,9 +8,9 @@ import { RepositoriesService } from './services/repositories/repositories.servic
 })
 export class AppComponent implements OnInit{
   title = 'Timm';
-  username = 'Timoh97'
-  repositories:any[] = []
-  isLoading = true
+  username = 'Timoh97';
+  repositories:any[] = [];
+  isLoading = false;
 
   constructor (private repositoriesService:RepositoriesService){
 
@@ -23,12 +23,14 @@ export class AppComponent implements OnInit{
     return this.repositoriesService.getRepositories (this.username).then((response:any[])=>{
       // console.log(response)
       this.repositories = response
-    }).catch ((error)=>{
+    }).catch (()=>{
 
-console.log (error)
+
 
     }).finally(()=>{
-this.isLoading = false
+
+this.isLoading = false;
+
     })
   }
 }
