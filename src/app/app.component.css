@@ -30,6 +30,11 @@ span,h3,label {
   color: brown;
 }
 
+li {
+  font-style: oblique;
+  color: rgb(119, 30, 30);
+}
+
 p {
   font-size: larger;
   font-style: oblique;
