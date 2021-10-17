@@ -10,6 +10,7 @@ export class AppComponent implements OnInit{
   title = 'Timm';
   username = 'Timoh97'
   repositories:any[] = []
+  isLoading = true
 
   constructor (private repositoriesService:RepositoriesService){
 
@@ -22,6 +23,12 @@ export class AppComponent implements OnInit{
     return this.repositoriesService.getRepositories (this.username).then((response:any[])=>{
       // console.log(response)
       this.repositories = response
+    }).catch ((error)=>{
+
+console.log (error)
+
+    }).finally(()=>{
+this.isLoading = false
     })
   }
 }
