@@ -10,16 +10,16 @@ import { User } from '../user';
 export class HomeComponent implements OnInit {
 
   userDetails:User;
-  repository:any
+  repository:any;
 
   constructor(private repositoriesService:RepositoriesService) {
 
-  }
+  };
 
-  getUserDetails (gitUsername){
+  getUserDetails (gitUsername: string){
 
     this.repositoriesService.getUserName(gitUsername).then((response)=>{
-     this.userDetails = this.repositoriesService.CommonUser
+     this.userDetails = this.repositoriesService.CommonUser;
 
     })
   }
@@ -27,11 +27,11 @@ export class HomeComponent implements OnInit {
 
 
 
-  getRepoDetails (gitUsername){
+  getRepoDetails (gitUsername: string){
 this.repositoriesService.getRepositories (gitUsername).then((response)=>{
 
   this.repository = this.repositoriesService.repos
-})
+});
   }
 
 

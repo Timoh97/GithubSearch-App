@@ -13,7 +13,7 @@ export class RepositoriesService {
 
 
 
-  private BaseUrl = environment.BASEURL
+  
 
   CommonUser: User;
   repos: Repository;
