@@ -36,8 +36,6 @@ this.repositoriesService.getRepositories (gitUsername).then((response)=>{
 
 
 
-
-
   ngOnInit(): void {
 this.getUserDetails('Timoh97')
 this.getRepoDetails ("")
