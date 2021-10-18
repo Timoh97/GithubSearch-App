@@ -25,8 +25,13 @@ export class HomeComponent implements OnInit {
   }
 
 
-  getRepoDetails (){
 
+
+  getRepoDetails (gitUsername){
+this.repositoriesService.getRepositories (gitUsername).then((response)=>{
+
+  this.repository = this.repositoriesService.repos
+})
   }
 
 
@@ -35,6 +40,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
 this.getUserDetails('Timoh97')
+this.getRepoDetails ("")
 
 
   }
