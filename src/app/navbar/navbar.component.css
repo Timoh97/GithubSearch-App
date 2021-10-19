@@ -4,3 +4,8 @@ li,b{
   border-radius: 5px;
   margin: 2px;
 }
+
+button {
+  color: green;
+  background-color: blue;
+}
