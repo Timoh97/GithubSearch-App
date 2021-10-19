@@ -87,7 +87,7 @@ export class GitRequestService {
     }
 
     let promise = new Promise((_resolve,_reject)=>{
-    this.http.get<ApiResponse>(environment.apiUrl + UserName + "?access_token=" ).toPromise().then(response=>{
+    this.http.get<ApiResponse>(environment.apiUrl + UserName + "?access_token=" ).toPromise().then((response)=>{
     this.user.name = response.name;
     this.user.login = response.login;
     this.user.followers = response.followers;
@@ -107,7 +107,7 @@ export class GitRequestService {
     }
 
     let promise = new Promise((resolve, reject) => {
-      this.http.get<ApiResponse>(environment.apiUrl + UserName + "/repos?access_token=" ).toPromise().then(res => {
+      this.http.get<ApiResponse>(environment.apiUrl + UserName + "/repos?access_token=" ).toPromise().then((res) => {
         this.repos = res;
           resolve(res);
             },

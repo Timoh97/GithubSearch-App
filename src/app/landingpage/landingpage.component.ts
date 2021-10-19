@@ -21,7 +21,7 @@ export class LandingpageComponent implements OnInit {
       this.user = users;
       });
 
-      this.gitService.getRepo().then(repos =>{
+      this.gitService.getRepo().then((repos:any) =>{
         this.repository = repos;
       })
   }
